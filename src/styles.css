@@ -1,0 +1,18 @@
+body {
+  background-color: grey;
+}
+
+.body {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: white;
+  font-family: sans-serif;
+  text-align: center;
+  border: 5px solid rgba(122, 113, 34, 0.836);
+}

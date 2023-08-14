@@ -14,7 +14,7 @@ const CounterApp = () => {
   };
 
   const CustomNumberAdd = () => {
-    if (inpValue === "") {
+    if (!inpValue) {
       setCount(count);
       setErrorMsg("Enter Input Value");
     } else if (inpValue < 0) {
@@ -27,7 +27,7 @@ const CounterApp = () => {
   };
 
   const CustomNumberSub = () => {
-    if (inpValue === "") {
+    if (!inpValue) {
       setErrorMsg("Enter Input Value");
     } else if (inpValue < 0) {
       setErrorMsg("*Enter Postitive Value");
@@ -54,7 +54,7 @@ const CounterApp = () => {
 
   return (
     <div className="body">
-      <div className="col-md-7 col-lg-6 col-sm-8 col-xl-4 col-8">
+      <div className="col-md-7 col-lg-6 col-sm-8 col-xl-4 col-10">
         <div className="box p-3">
           <h1 className="pb-3">Counter App</h1>
           <p className="h1">{count}</p>

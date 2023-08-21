@@ -10,6 +10,7 @@ const CounterApp = () => {
   };
 
   const Decrement = () => {
+
     setCount(count - 1);
   };
 
@@ -54,7 +55,7 @@ const CounterApp = () => {
 
   return (
     <div className="body">
-      <div className="col-md-7 col-lg-6 col-sm-8 col-xl-4 col-10">
+      <div className="col-xl-4 col-lg-5 col-md-7 col-sm-10 col-12">
         <div className="box p-3">
           <h1 className="pb-3">Counter App</h1>
           <p className="h1">{count}</p>

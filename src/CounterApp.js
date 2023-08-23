@@ -10,7 +10,6 @@ const CounterApp = () => {
   };
 
   const Decrement = () => {
-
     setCount(count - 1);
   };
 
@@ -43,10 +42,9 @@ const CounterApp = () => {
     setCount(0);
     setInpValue("");
     setErrorMsg("Reseting App");
-
     setTimeout(() => {
       setErrorMsg("");
-    }, 1000);
+    }, 1500);
   };
 
   const InpChange = (n) => {
@@ -55,10 +53,10 @@ const CounterApp = () => {
 
   return (
     <div className="body">
-      <div className="col-xl-4 col-lg-5 col-md-7 col-sm-10 col-12">
+      <div className="col-xl-4 col-lg-6 col-md-8 col-sm-12 col-12">
         <div className="box p-3">
           <h1 className="pb-3">Counter App</h1>
-          <p className="h1">{count}</p>
+          <p className="h1 ">{count}</p>
           <button className="btn btn-danger m-4 p-3" onClick={Decrement}>
             Decrement
           </button>
@@ -84,7 +82,9 @@ const CounterApp = () => {
           <button className="btn btn-dark m-4 p-3" onClick={Reset}>
             Reset
           </button>
-          <span id="hide">{errormsg}</span>
+          <p id="hide" className="text-muted">
+            {errormsg}
+          </p>
         </div>
       </div>
     </div>
@@ -92,3 +92,5 @@ const CounterApp = () => {
 };
 
 export default CounterApp;
+
+// new patch
